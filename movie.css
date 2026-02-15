@@ -1,0 +1,30 @@
+#app{
+    height: 500px;
+    width: 450px;
+    background: rgb(255,255,255,0.5);
+    display: grid;
+    align-content: baseline;
+    justify-content: center;
+
+}
+
+body{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    margin: 140px;
+    background: linear-gradient(to right,black,grey);
+}
+input{
+    height: 25px;
+    width: 200px;
+}
+button{
+    height: 30px;
+    width: 70px;
+    border-radius: 20px;
+}
+.img{
+    height: 30px;
+    width: 30px;
+}
