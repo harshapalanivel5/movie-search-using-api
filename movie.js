@@ -5,12 +5,8 @@ async function movielist(){
     const movie = await fetch(`https://imdb.iamidiotareyoutoo.com/search?q=${input}`);
     const data = await movie.json();
 
-    app.innerHTML="";
-
-    let movies = data.description[0];
-
     
-
+    let movies = data.description[0];
         
     let all = document.createElement("div");
     all.className ="all"
@@ -31,8 +27,8 @@ async function movielist(){
     values.appendChild(all);
 
     img.src = movies["#IMG_POSTER"];
-    name.innerText = movies["#TITLE"];
-    year.innerText = movies["#YEAR"];
+    name.innerText = "Movie Name : "+movies["#TITLE"];
+    year.innerText = "Release year : "+movies["#YEAR"];
 
 
 
